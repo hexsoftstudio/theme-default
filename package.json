@@ -2,27 +2,12 @@
   "name": "theme-default",
   "version": "1.0.1",
   "description": "hexsoftstudio theme default",
-  "homepage": "https://github.com/hexsoftstudio/theme-default#readme",
-  "bugs": {
-    "url": "https://github.com/hexsoftstudio/theme-default/issues"
-  },
-  "repository": "hexsoftstudio/theme/default",
-  "main": "sass/main.scss",
-  "scripts": {
-    "css-build": "node-sass --omit-source-map-url sass/main.scss css/main.css",
-    "css-watch": "npm run css-build -- --watch",
-    "start": "npm run css-watch"
-  },
+  "repository": "hexsoftstudio/theme-default",
+  "main": "css/main.css",
   "keywords": [
     "Hexsoftstudio",
     "Unordered List"
   ],
   "author": "SirKitts",
-  "license": "MIT",
-  "dependencies": {
-    "bulma": "^0.9.2"
-  },
-  "devDependencies": {
-    "node-sass": "^5.0.0"
-  }
+  "license": "MIT"
 }
