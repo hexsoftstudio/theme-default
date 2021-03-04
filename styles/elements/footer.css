@@ -1,0 +1,27 @@
+footer, #footer, .button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  font-weight: 400;
+  font-size: small; }
+
+.footer-gold {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  font-weight: 400;
+  font-size: small;
+  flex-direction: row;
+  height: 3.5rem;
+  background-color: #01273d;
+  color: gold; }

@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,700");
 button, #button {
   border: none;
   padding: 0.875rem 2rem;
@@ -135,31 +134,3 @@ button, #button {
     border-radius: 1rem; }
   .button-white:hover {
     background-color: #e6e6e6; }
-
-footer, #footer, .button {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 2.5rem;
-  font-weight: 400;
-  font-size: small; }
-
-.footer-gold {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 2.5rem;
-  font-weight: 400;
-  font-size: small;
-  flex-direction: row;
-  height: 3.5rem;
-  background-color: #01273d;
-  color: gold; }

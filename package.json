@@ -1,6 +1,6 @@
 {
   "name": "@hexsoftstudio/theme-default",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "hexsoftstudio theme default",
   "homepage": "https://github.com/hexsoftstudio/theme-default#readme",
   "bugs": {
@@ -9,6 +9,8 @@
   "repository": "hexsoftstudio/theme/default",
   "main": "index.js",
   "scripts": {
+    "css-build-elements": "node-sass --omit-source-map-url sass/styles/elements -o styles/elements",
+    "css-watch-elements": "npm run css-build-elements -- --watch",
     "css-build": "node-sass --omit-source-map-url sass/styles/ -o styles/",
     "css-watch": "npm run css-build -- --watch",
     "start": "npm run css-watch",
