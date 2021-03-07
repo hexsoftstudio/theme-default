@@ -63,6 +63,15 @@ button, #button {
   .button-brown:hover {
     background-color: #5a5b4c; }
 
+.button-gold {
+  background-color: #FFD700;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 4px #000000; }
+  .button-gold--rounded {
+    border-radius: 1rem; }
+  .button-gold:hover {
+    background-color: #ccac00; }
+
 .button-green {
   background-color: #4CAF50;
   color: #FFFFFF;

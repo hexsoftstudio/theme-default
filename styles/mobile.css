@@ -159,6 +159,15 @@ button, #button {
   .button-brown:hover {
     background-color: #5a5b4c; }
 
+.button-gold {
+  background-color: #FFD700;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 4px #000000; }
+  .button-gold--rounded {
+    border-radius: 1rem; }
+  .button-gold:hover {
+    background-color: #ccac00; }
+
 .button-green {
   background-color: #4CAF50;
   color: #FFFFFF;
@@ -258,3 +267,81 @@ footer, #footer, .button {
   height: 3.5rem;
   background-color: #01273d;
   color: gold; }
+
+#ratings {
+  cursor: pointer; }
+
+.ratings-background {
+  color: #01273d; }
+  .ratings-background:hover {
+    color: black; }
+
+.ratings-primary {
+  color: #2b9fd8; }
+  .ratings-primary:hover {
+    color: #186185; }
+
+.ratings-secondary {
+  color: #f16b21; }
+  .ratings-secondary:hover {
+    color: #a2400a; }
+
+.ratings-black {
+  color: #000000; }
+  .ratings-black:hover {
+    color: black; }
+
+.ratings-blue {
+  color: #008CBA; }
+  .ratings-blue:hover {
+    color: #003f54; }
+
+.ratings-brown {
+  color: #757763; }
+  .ratings-brown:hover {
+    color: #3e3f35; }
+
+.ratings-gold {
+  color: #FFD700; }
+  .ratings-gold:hover {
+    color: #998100; }
+
+.ratings-green {
+  color: #4CAF50; }
+  .ratings-green:hover {
+    color: #2d682f; }
+
+.ratings-pink {
+  color: #FA7C91; }
+  .ratings-pink:hover {
+    color: #f61a3f; }
+
+.ratings-purple {
+  color: #8A4D76; }
+  .ratings-purple:hover {
+    color: #49283e; }
+
+.ratings-red {
+  color: #f44336; }
+  .ratings-red:hover {
+    color: #ba160a; }
+
+.ratings-beige-light {
+  color: #D0D1CD; }
+  .ratings-beige-light:hover {
+    color: #9ea098; }
+
+.ratings-beige-lighter {
+  color: #EFF0EB; }
+  .ratings-beige-lighter:hover {
+    color: #c0c4b1; }
+
+.ratings-gray {
+  color: #e7e7e7; }
+  .ratings-gray:hover {
+    color: #b4b4b4; }
+
+.ratings-white {
+  color: #FFFFFF; }
+  .ratings-white:hover {
+    color: #cccccc; }
