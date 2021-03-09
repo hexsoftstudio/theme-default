@@ -1,3 +1,29 @@
+:root {
+  --color-background: #01273d;
+  --color-primary: #2b9fd8;
+  --color-secondary: #f16b21;
+  --color-tertiary: #FFD700;
+  --color-red: #f44336;
+  --color-orange: #f16b21;
+  --color-yellow: #FFD700;
+  --color-green: #4CAF50;
+  --color-blue: #008CBA;
+  --color-indigo: #4b0082;
+  --color-violet: #800080;
+  --color-brown: #757763;
+  --color-gold: #FFD700;
+  --color-gray: #999;
+  --color-pink: #FA7C91;
+  --color-purple: #8A4D76;
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+  --button-simple-color: #01273d;
+  --button-simple-hover: #FFFFFF;
+  --button-color: #2b9fd8;
+  --button-color-hover: #01273d;
+  --button-shadow: #000000;
+  --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3); }
+
 #ratings {
   cursor: pointer; }
 
@@ -16,62 +42,13 @@
   .ratings-secondary:hover {
     color: #a2400a; }
 
-.ratings-black {
-  color: #000000; }
-  .ratings-black:hover {
-    color: black; }
-
-.ratings-blue {
-  color: #008CBA; }
-  .ratings-blue:hover {
-    color: #003f54; }
-
-.ratings-brown {
-  color: #757763; }
-  .ratings-brown:hover {
-    color: #3e3f35; }
-
-.ratings-gold {
+.ratings-tertiary {
   color: #FFD700; }
-  .ratings-gold:hover {
+  .ratings-tertiary:hover {
     color: #998100; }
 
-.ratings-green {
-  color: #4CAF50; }
-  .ratings-green:hover {
-    color: #2d682f; }
-
-.ratings-pink {
-  color: #FA7C91; }
-  .ratings-pink:hover {
-    color: #f61a3f; }
-
-.ratings-purple {
-  color: #8A4D76; }
-  .ratings-purple:hover {
-    color: #49283e; }
-
-.ratings-red {
-  color: #f44336; }
-  .ratings-red:hover {
-    color: #ba160a; }
-
-.ratings-beige-light {
-  color: #D0D1CD; }
-  .ratings-beige-light:hover {
-    color: #9ea098; }
-
-.ratings-beige-lighter {
-  color: #EFF0EB; }
-  .ratings-beige-lighter:hover {
-    color: #c0c4b1; }
-
-.ratings-gray {
-  color: #e7e7e7; }
-  .ratings-gray:hover {
-    color: #b4b4b4; }
-
-.ratings-white {
-  color: #FFFFFF; }
-  .ratings-white:hover {
-    color: #cccccc; }
+/*
+@each $name, $color in $light-colors {
+    @include ratings($name, $color);
+}
+*/

@@ -1,34 +1,35 @@
 {
   "name": "@hexsoftstudio/theme-default",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "hexsoftstudio theme default",
   "homepage": "https://hexsoftstudio.github.io/demo/",
   "bugs": {
     "url": "https://github.com/hexsoftstudio/theme-default/issues"
   },
   "repository": "hexsoftstudio/theme/default",
+  "author": "SirKitts",
+  "license": "MIT",
   "main": "index.js",
   "scripts": {
-    "css-build-elements": "node-sass --omit-source-map-url sass/styles/elements -o styles/elements",
-    "css-watch-elements": "npm run css-build-elements -- --watch",
-    "css-build": "node-sass --omit-source-map-url sass/styles/ -o styles/",
-    "css-watch": "npm run css-build -- --watch",
-    "start": "npm run css-watch",
+    "css:build-elements": "node-sass --omit-source-map-url sass/styles/elements -o styles/elements",
+    "css:watch-elements": "npm run css:build-elements -- --watch",
+  
+    "css:build": "node-sass --omit-source-map-url sass/styles/ -o styles/",
+    "css:watch": "npm run css:build -- --watch",
+    "start": "npm run css:watch",
     "precommit": "lint-staged"
   },
   "keywords": [
     "Hexsoftstudio"
   ],
-  "author": "SirKitts",
-  "license": "MIT",
-  "dependencies": {
-    "bulma": "^0.9.2"
-  },
   "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "bulma": "^0.9.2",
     "eslint": "^7.20.0",
     "eslint-plugin-prettier": "^3.3.1",
     "lint-staged": "^10.5.4",
     "node-sass": "^5.0.0",
+    "npm-run-all": "^4.1.5",
     "prettier": "^2.2.1",
     "stylelint": "^13.11.0",
     "stylelint-config-prettier": "^8.0.2",

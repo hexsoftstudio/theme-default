@@ -1,4 +1,30 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,700");
+:root {
+  --color-background: #01273d;
+  --color-primary: #2b9fd8;
+  --color-secondary: #f16b21;
+  --color-tertiary: #FFD700;
+  --color-red: #f44336;
+  --color-orange: #f16b21;
+  --color-yellow: #FFD700;
+  --color-green: #4CAF50;
+  --color-blue: #008CBA;
+  --color-indigo: #4b0082;
+  --color-violet: #800080;
+  --color-brown: #757763;
+  --color-gold: #FFD700;
+  --color-gray: #999;
+  --color-pink: #FA7C91;
+  --color-purple: #8A4D76;
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+  --button-simple-color: #01273d;
+  --button-simple-hover: #FFFFFF;
+  --button-color: #2b9fd8;
+  --button-color-hover: #01273d;
+  --button-shadow: #000000;
+  --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3); }
+
 button, #button {
   border: none;
   padding: 0.875rem 2rem;
@@ -9,6 +35,17 @@ button, #button {
   margin: 0.25rem 0.125rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   cursor: pointer; }
+
+.button-simple {
+  background-color: var(--color-white);
+  color: var(--button-simple-color);
+  border: 1px solid var(--button-simple-color); }
+  .button-simple--rounded {
+    border-radius: 1rem; }
+  .button-simple--shadow {
+    text-shadow: 2px 2px 4px var(--color-black); }
+  .button-simple:hover {
+    background-color: var(--button-simple-hover); }
 
 .button-background {
   background-color: #01273d;
@@ -37,14 +74,50 @@ button, #button {
   .button-secondary:hover {
     background-color: #d2530d; }
 
-.button-black {
-  background-color: #000000;
+.button-tertiary {
+  background-color: #FFD700;
   color: #FFFFFF;
   text-shadow: 2px 2px 4px #000000; }
-  .button-black--rounded {
+  .button-tertiary--rounded {
     border-radius: 1rem; }
-  .button-black:hover {
-    background-color: black; }
+  .button-tertiary:hover {
+    background-color: #ccac00; }
+
+.button-red {
+  background-color: #f44336;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 4px #000000; }
+  .button-red--rounded {
+    border-radius: 1rem; }
+  .button-red:hover {
+    background-color: #ea1c0d; }
+
+.button-orange {
+  background-color: #f16b21;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 4px #000000; }
+  .button-orange--rounded {
+    border-radius: 1rem; }
+  .button-orange:hover {
+    background-color: #d2530d; }
+
+.button-yellow {
+  background-color: #FFD700;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 4px #000000; }
+  .button-yellow--rounded {
+    border-radius: 1rem; }
+  .button-yellow:hover {
+    background-color: #ccac00; }
+
+.button-green {
+  background-color: #4CAF50;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 4px #000000; }
+  .button-green--rounded {
+    border-radius: 1rem; }
+  .button-green:hover {
+    background-color: #3d8b40; }
 
 .button-blue {
   background-color: #008CBA;
@@ -54,6 +127,24 @@ button, #button {
     border-radius: 1rem; }
   .button-blue:hover {
     background-color: #006687; }
+
+.button-indigo {
+  background-color: #4b0082;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 4px #000000; }
+  .button-indigo--rounded {
+    border-radius: 1rem; }
+  .button-indigo:hover {
+    background-color: #2e004f; }
+
+.button-violet {
+  background-color: #800080;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 4px #000000; }
+  .button-violet--rounded {
+    border-radius: 1rem; }
+  .button-violet:hover {
+    background-color: #4d004d; }
 
 .button-brown {
   background-color: #757763;
@@ -73,14 +164,14 @@ button, #button {
   .button-gold:hover {
     background-color: #ccac00; }
 
-.button-green {
-  background-color: #4CAF50;
+.button-gray {
+  background-color: #999;
   color: #FFFFFF;
   text-shadow: 2px 2px 4px #000000; }
-  .button-green--rounded {
+  .button-gray--rounded {
     border-radius: 1rem; }
-  .button-green:hover {
-    background-color: #3d8b40; }
+  .button-gray:hover {
+    background-color: gray; }
 
 .button-pink {
   background-color: #FA7C91;
@@ -100,14 +191,14 @@ button, #button {
   .button-purple:hover {
     background-color: #693b5a; }
 
-.button-red {
-  background-color: #f44336;
+.button-black {
+  background-color: #000000;
   color: #FFFFFF;
   text-shadow: 2px 2px 4px #000000; }
-  .button-red--rounded {
+  .button-black--rounded {
     border-radius: 1rem; }
-  .button-red:hover {
-    background-color: #ea1c0d; }
+  .button-black:hover {
+    background-color: black; }
 
 .button-beige-light {
   background-color: #D0D1CD;
@@ -127,14 +218,14 @@ button, #button {
   .button-beige-lighter:hover {
     background-color: #d8dace; }
 
-.button-gray {
-  background-color: #e7e7e7;
+.button-gray-light {
+  background-color: #999;
   color: #000000;
   text-shadow: 2px 2px 4px #000000; }
-  .button-gray--rounded {
+  .button-gray-light--rounded {
     border-radius: 1rem; }
-  .button-gray:hover {
-    background-color: #cecece; }
+  .button-gray-light:hover {
+    background-color: gray; }
 
 .button-white {
   background-color: #FFFFFF;
@@ -144,6 +235,15 @@ button, #button {
     border-radius: 1rem; }
   .button-white:hover {
     background-color: #e6e6e6; }
+
+.button-custom {
+  background-color: var(--button-color);
+  color: #fff;
+  text-shadow: 2px 2px 4px var(--button-shadow); }
+  .button-custom--rounded {
+    border-radius: 1rem; }
+  .button-custom:hover {
+    background-color: var(--button-color-hover); }
 
 footer, #footer, .button {
   display: flex;
@@ -191,62 +291,13 @@ footer, #footer, .button {
   .ratings-secondary:hover {
     color: #a2400a; }
 
-.ratings-black {
-  color: #000000; }
-  .ratings-black:hover {
-    color: black; }
-
-.ratings-blue {
-  color: #008CBA; }
-  .ratings-blue:hover {
-    color: #003f54; }
-
-.ratings-brown {
-  color: #757763; }
-  .ratings-brown:hover {
-    color: #3e3f35; }
-
-.ratings-gold {
+.ratings-tertiary {
   color: #FFD700; }
-  .ratings-gold:hover {
+  .ratings-tertiary:hover {
     color: #998100; }
 
-.ratings-green {
-  color: #4CAF50; }
-  .ratings-green:hover {
-    color: #2d682f; }
-
-.ratings-pink {
-  color: #FA7C91; }
-  .ratings-pink:hover {
-    color: #f61a3f; }
-
-.ratings-purple {
-  color: #8A4D76; }
-  .ratings-purple:hover {
-    color: #49283e; }
-
-.ratings-red {
-  color: #f44336; }
-  .ratings-red:hover {
-    color: #ba160a; }
-
-.ratings-beige-light {
-  color: #D0D1CD; }
-  .ratings-beige-light:hover {
-    color: #9ea098; }
-
-.ratings-beige-lighter {
-  color: #EFF0EB; }
-  .ratings-beige-lighter:hover {
-    color: #c0c4b1; }
-
-.ratings-gray {
-  color: #e7e7e7; }
-  .ratings-gray:hover {
-    color: #b4b4b4; }
-
-.ratings-white {
-  color: #FFFFFF; }
-  .ratings-white:hover {
-    color: #cccccc; }
+/*
+@each $name, $color in $light-colors {
+    @include ratings($name, $color);
+}
+*/
