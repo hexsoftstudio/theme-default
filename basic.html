@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Basic Styles</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,700">
+    <link rel="stylesheet" href="styles/custom.css">
+    <link rel="stylesheet" href="styles/basic.css"> 
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="img/logo.png" alt="logo" class="logo">
+
+        <form action="#" class="search">
+          <input type="text" class="search__input" placeholder="Search hotels">
+          <button class="search__button">
+            <svg class="search__icon">
+              <use xlink:href="icons/sprite.svg#icon-magnifying-glass"></use>
+            </svg>
+          </button>
+        </form>
+
+        <nav class="user-nav">
+          <div class="user-nav__icon-box">
+            <svg class="user-nav__icon">
+              <use xlink:href="icons/sprite.svg#icon-bookmark"></use>
+            </svg>
+            <span class="user-nav__notification">7</span>
+          </div>
+          <div class="user-nav__icon-box">
+            <svg class="user-nav__icon">
+              <use xlink:href="icons/sprite.svg#icon-chat"></use>
+            </svg>
+            <span class="user-nav__notification">13</span>
+          </div>
+          <div class="user-nav__user">
+            <img src="img/photo.jpeg" alt="User Photo" class="user-nav__user-photo">
+            <span class="user-nav__user-name">
+              Lady
+            </span>
+          </div>
+        </nav>
+      </header>
+      <div class="content">
+        <nav class="sidebar">
+          Navigation
+        </nav>
+        <main class="hotel-view">
+          Hotel View
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
