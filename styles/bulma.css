@@ -51,6 +51,17 @@ ul, ol {
 :focus {
   outline: 0; }
 
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    box-shadow: none; }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25); }
+  100% {
+    transform: scale(1);
+    box-shadow: none; } }
+
 :root {
   --color-background: #01273d;
   --color-primary: #2b9fd8;
@@ -309,7 +320,7 @@ footer, #footer, .button {
   font-weight: 400;
   font-size: small; }
 
-.footer-gold {
+.footer__copyright {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -322,8 +333,12 @@ footer, #footer, .button {
   font-size: small;
   flex-direction: row;
   height: 3.5rem;
-  background-color: #01273d;
-  color: gold; }
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  cursor: pointer; }
+  .footer__copyright span:hover {
+    color: var(--color-secondary);
+    transform: scale(1); }
 
 #ratings {
   cursor: pointer; }
