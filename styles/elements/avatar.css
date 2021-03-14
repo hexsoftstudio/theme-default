@@ -1,0 +1,67 @@
+:root {
+  --color-background: #01273d;
+  --color-primary: #2b9fd8;
+  --color-secondary: #f16b21;
+  --color-tertiary: #FFD700;
+  --color-red: #f44336;
+  --color-orange: #f16b21;
+  --color-yellow: #FFD700;
+  --color-green: #4CAF50;
+  --color-blue: #008CBA;
+  --color-indigo: #4b0082;
+  --color-violet: #800080;
+  --color-brown: #757763;
+  --color-gold: #FFD700;
+  --color-gray: #999;
+  --color-pink: #FA7C91;
+  --color-purple: #8A4D76;
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+  --button-simple-color: #01273d;
+  --button-simple-hover: #FFFFFF;
+  --button-color: #2b9fd8;
+  --button-color-hover: #01273d;
+  --button-shadow: #000000;
+  --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3);
+  --photo-size-small: 2rem;
+  --photo-size-medium: 4rem;
+  --photo-size-large: 6rem;
+  --photo-size-default: 6rem;
+  --photo-squeeze-default: -1.5rem; }
+
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .avatar--direction {
+    flex-direction: column; }
+  .avatar__photo {
+    box-sizing: content-box;
+    width: var(--photo-size-default);
+    height: var(--photo-size-default);
+    border-radius: 50%;
+    margin: 0.2rem;
+    cursor: pointer; }
+    .avatar__photo--border {
+      border: 0.2rem solid #fff; }
+    .avatar__photo--squeeze-right:not(:last-child) {
+      margin-right: var(--photo-squeeze-default); }
+    .avatar__photo--squeeze-bottom:not(:last-child) {
+      margin-bottom: var(--photo-squeeze-default); }
+  .avatar__name {
+    font-weight: 600; }
+  .avatar__photo:hover {
+    transform: scale(1.25); }
+  .avatar__notification {
+    font-size: 0.8rem;
+    height: 1.75rem;
+    width: 1.75rem;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    color: #fff;
+    position: relative;
+    bottom: -2rem;
+    right: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }

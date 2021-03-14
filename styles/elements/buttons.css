@@ -22,7 +22,12 @@
   --button-color: #2b9fd8;
   --button-color-hover: #01273d;
   --button-shadow: #000000;
-  --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3); }
+  --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3);
+  --photo-size-small: 2rem;
+  --photo-size-medium: 4rem;
+  --photo-size-large: 6rem;
+  --photo-size-default: 6rem;
+  --photo-squeeze-default: -1.5rem; }
 
 button, #button {
   border: none;
