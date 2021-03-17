@@ -1,6 +1,6 @@
 {
   "name": "@hexsoftstudio/theme-default",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "hexsoftstudio theme-default",
   "homepage": "https://hexsoftstudio.github.io/demo/",
   "bugs": {
@@ -11,10 +11,10 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": {
-    "css:build-elements": "node-sass --omit-source-map-url sass/styles/elements -o styles/elements",
+    "css:build-elements": "node-sass --omit-source-map-url --include-path scss sass/styles/elements -o styles/elements --output-style compressed",
     "css:watch-elements": "npm run css:build-elements -- --watch",
   
-    "css:build": "node-sass --omit-source-map-url sass/styles/ -o styles/",
+    "css:build": "node-sass --omit-source-map-url --include-path scss sass/styles/ -o styles/ --output-style compressed",
     "css:watch": "npm run css:build -- --watch",
     "start": "npm run css:watch",
     "precommit": "lint-staged"

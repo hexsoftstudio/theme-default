@@ -30,6 +30,35 @@ or import css
 
 ### Usage ###
 
+### Avatar
+
+```html
+<section>
+    <div class="avatar-container">
+        <div class="avatar">
+        <img
+            src="realtor-1.jpeg"
+            alt="Avatar 1"
+            class="avatar__photo"
+        />
+        <span class="avatar__notification">12</span>
+        <img
+            src="realtor-2.jpeg"
+            alt="Avatar 2"
+            class="avatar__photo avatar__photo--border"
+        />
+        <span class="avatar__notification">21</span>
+        <img
+            src="realtor-3.jpeg"
+            alt="Avatar 3"
+            class="avatar__photo"
+        />
+        <span class="avatar__notification">53</span>
+        </div>
+    </div>
+</section>
+```
+
 ### Buttons
 
 ```html
@@ -43,39 +72,36 @@ or import css
 </section>
 ```
 
-### Avatar
-
-```html
-<section>
-    <div class="container">
-        <div class="avatar">
-        <img
-            src="./img/realtor-1.jpeg"
-            alt="Avatar 1"
-            class="avatar__photo"
-        />
-        <img
-            src="./img/realtor-2.jpeg"
-            alt="Avatar 2"
-            class="avatar__photo avatar__photo--border"
-        />
-        <img
-            src="./img/realtor-3.jpeg"
-            alt="Avatar 3"
-            class="avatar__photo"
-        />
-        <span class="avatar__notification">7</span>
-        </div>
-    </div>
-</section>
-```
-
 ### Footer
 
 ```html
 <footer>
     <div class="footer__copyright">Copyright (c) 2021</div>
 </footer>
+```
+
+### Ratings
+
+```html
+<section>
+    <div id="ratings">
+        <svg class="ratings__star">
+            <use xlink:href="icons/sprite.svg#icon-star"></use>
+        </svg>
+        <svg class="ratings__star">
+            <use xlink:href="icons/sprite.svg#icon-star"></use>
+        </svg>
+        <svg class="ratings__star">
+            <use xlink:href="icons/sprite.svg#icon-star"></use>
+        </svg>
+        <svg class="ratings__star">
+            <use xlink:href="icons/sprite.svg#icon-star"></use>
+        </svg>
+        <svg class="ratings__star">
+            <use xlink:href="icons/sprite.svg#icon-star-outlined"></use>
+        </svg>
+    </div>
+</section>
 ```
 
 For examples see [https://hexsoftstudio.github.io/demo/](https://hexsoftstudio.github.io/demo/)
