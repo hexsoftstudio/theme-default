@@ -8,153 +8,169 @@
     <link  href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,700">
     <link rel="stylesheet" href="styles/bulma.css">
   </head>
-  <body>
+  <body class="home">
+    <nav>
+      Menu
+    </nav>
+
+    <header>
+      Header
+    </header>
+    
+    <section class="hero">
+      Hero
+    </section>
   
-  <section>
-    <div class="container">
-      <h1 class="title">Css</h1>
-        <p class="subtitle">with <strong>Bulma</strong>!</p>
-        <p>
-          Modern CSS framework based on
-          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">
-          Flexbox
-          </a>
-        </p>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <button class="button-primary">Primary</button>
-      <button class="button-red button-red--rounded">Secondary</button>
-      <button class="button-custom button-custom--rounded">Custom</button>
-      <button class="button-simple">Simple Button</button>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <div class="avatar-container">
-        <div class="avatar">
-          <img
-            src="./demo/img/realtor-1.jpeg"
-            alt="Avatar 1"
-            class="avatar__photo"
-          />
-          <span class="avatar__notification">7</span>
+    <main>
+      <h1>Latest News</h1>
+      <section class="card-container">
+        <div class="card-simple">
+          <img class="card-simple__image" src="./demo/img/gal-1.jpeg" alt="image 1">
+          <div class="card-simple__text">
+            <h4>Luxury homes</h4>
+            <p>Lorem ipsum dolor sit amet  consectetur consectetur adipisicing elit. Adipisci, laboriosam sit. Modi fuga necessitatibus animi!Modi fuga necessitatibus animi! Modi fuga necessitatibus animi! Modi fuga necessitatibus animi!</p>
+          </div>
         </div>
-        <div class="avatar">
-          <img
-            src="./demo/img/realtor-2.jpeg"
-            alt="Avatar 2"
-            class="avatar__photo"
-          />
-          <span class="avatar__notification">8</span>
+        <div class="card-simple">
+          <img class="card-simple__image card-simple__image--right" src="./demo/img/gal-2.jpeg" alt="image 1">
+          <div class="card-simple__text card-simple__text--left">
+            <h4>World's best</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos beatae nam animi tenetur ab soluta impedit voluptatem iste, provident!</p>
+          </div>
         </div>
-        <div class="avatar">
+        <div class="card-simple">
+          <img class="card-simple__image" src="./demo/img/gal-3.jpeg" alt="image 1">
+          <div class="card-simple__text">
+            <h4>World's best</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos beatae nam animi tenetur ab soluta impedit voluptatem iste, provident!</p>
+          </div>
+        </div>
+
+        <div class="card-classic">
+          <h4>World's best</h4>
+          <img class="card-classic__image" src="./demo/img/gal-3.jpeg" alt="image 1">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos beatae nam animi tenetur ab soluta impedit voluptatem iste, provident! Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ad architecto excepturi commodi autem vero voluptatem nemo deleniti nesciunt esse.</p>
+          <div id="ratings">
+            <svg class="ratings__star">
+              <use xlink:href="./demo/icons/sprite.svg#icon-star"></use>
+            </svg>
+            <svg class="ratings__star">
+              <use xlink:href="./demo/icons/sprite.svg#icon-star"></use>
+            </svg>
+            <svg class="ratings__star">
+              <use xlink:href="./demo/icons/sprite.svg#icon-star"></use>
+            </svg>
+            <svg class="ratings__star">
+              <use xlink:href="./demo/icons/sprite.svg#icon-star"></use>
+            </svg>
+            <svg class="ratings__star">
+              <use xlink:href="./demo/icons/sprite.svg#icon-star-outlined"></use>
+            </svg>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <section class="sample">
+      <div class="sample__socialmedia">
+        <h1 class="socialmedia__title">Follow us on</h1>
+        <div class="socialmedia">
+          <svg class="socialmedia__facebook">
+            <use xlink:href="./demo/icons/sprite.svg#icon-facebook"></use>
+          </svg>
+          <svg class="socialmedia__google">
+            <use xlink:href="./demo/icons/sprite.svg#icon-google"></use>
+          </svg>
+          <svg class="socialmedia__instagram">
+            <use xlink:href="./demo/icons/sprite.svg#icon-instagram"></use>
+          </svg>
+          <svg class="socialmedia__linkedin">
+            <use xlink:href="./demo/icons/sprite.svg#icon-linkedin"></use>
+          </svg>
+          <svg class="socialmedia__pinterest">
+            <use xlink:href="./demo/icons/sprite.svg#icon-pinterest"></use>
+          </svg>
+          <svg class="socialmedia__twitter">
+            <use xlink:href="./demo/icons/sprite.svg#icon-twitter"></use>
+          </svg>
+          <svg class="socialmedia__vimeo">
+            <use xlink:href="./demo/icons/sprite.svg#icon-vimeo"></use>
+          </svg>
+          <svg class="socialmedia__youtube">
+            <use xlink:href="./demo/icons/sprite.svg#icon-youtube"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="sample__cart">
+        <div class="cart">
+          <div class="cart__image">
+            <svg class="cart__image--shopping-cart">
+              <use xlink:href="./demo/icons/sprite.svg#icon-shopping-cart"></use>
+            </svg>
+          </div>
+          <div class="cart__label">
+            <span class="cart__label--count">
+              10
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="sample__users">
+        <div class="user">
+          <svg class="user__image">
+            <use xlink:href="./demo/icons/sprite.svg#icon-user"></use>
+          </svg>
+          <svg class="user__logout">
+            <use xlink:href="./demo/icons/sprite.svg#icon-lock"></use>
+          </svg>
+          <span class="user__logout--register">Register</span>
+        </div>
+        <div class="user">
           <img
             src="./demo/img/realtor-3.jpeg"
             alt="Avatar 3"
-            class="avatar__photo"
+            class="user__image user__image--bordered"
           />
-          <span class="avatar__notification">9</span>
+          <svg class="user__login">
+            <use xlink:href="./demo/icons/sprite.svg#icon-lock-open"></use>
+          </svg>
+          <span class="user__login--name">John S.</span>
         </div>
       </div>
-    </div>
-  </section>
 
-  <section>
-      <div id="ratings">
-        <svg class="ratings__star">
-          <use xlink:href="./demo/icons/sprite.svg#icon-star"></use>
-        </svg>
-        <svg class="ratings__star">
-          <use xlink:href="./demo/icons/sprite.svg#icon-star"></use>
-        </svg>
-        <svg class="ratings__star">
-          <use xlink:href="./demo/icons/sprite.svg#icon-star"></use>
-        </svg>
-        <svg class="ratings__star">
-          <use xlink:href="./demo/icons/sprite.svg#icon-star"></use>
-        </svg>
-        <svg class="ratings__star">
-          <use xlink:href="./demo/icons/sprite.svg#icon-star-outlined"></use>
-        </svg>
+      <div class="sample_realtors">
+        <div class="avatar-container">
+          <div class="avatar">
+            <img
+              src="./demo/img/realtor-1.jpeg"
+              alt="Avatar 1"
+              class="avatar__photo"
+            />
+            <span class="avatar__notification">7</span>
+          </div>
+          <div class="avatar">
+            <img
+              src="./demo/img/realtor-2.jpeg"
+              alt="Avatar 2"
+              class="avatar__photo"
+            />
+            <span class="avatar__notification">8</span>
+          </div>
+          <div class="avatar">
+            <img
+              src="./demo/img/realtor-3.jpeg"
+              alt="Avatar 3"
+              class="avatar__photo"
+            />
+            <span class="avatar__notification">9</span>
+          </div>
+        </div>
       </div>
-  </section>
+    </section>
 
-  <section>
-    <div class="cart">
-      <div class="cart__image">
-        <svg class="cart__image--shopping-cart">
-          <use xlink:href="./demo/icons/sprite.svg#icon-shopping-cart"></use>
-        </svg>
-      </div>
-      <div class="cart__label">
-        <span class="cart__label--count">
-          10
-        </span>
-      </div>
-    </div>
-  </section>
+    <footer>
+      <div class="footer__copyright">Copyright (c) 2021</div>
+    </footer>
 
-  <section>
-    <div class="socialmedia">
-      <h1 class="socialmedia__title">Follow us on</h1>
-      <svg class="socialmedia__facebook">
-        <use xlink:href="./demo/icons/sprite.svg#icon-facebook"></use>
-      </svg>
-      <svg class="socialmedia__google">
-        <use xlink:href="./demo/icons/sprite.svg#icon-google"></use>
-      </svg>
-      <svg class="socialmedia__instagram">
-        <use xlink:href="./demo/icons/sprite.svg#icon-instagram"></use>
-      </svg>
-      <svg class="socialmedia__linkedin">
-        <use xlink:href="./demo/icons/sprite.svg#icon-linkedin"></use>
-      </svg>
-      <svg class="socialmedia__pinterest">
-        <use xlink:href="./demo/icons/sprite.svg#icon-pinterest"></use>
-      </svg>
-      <svg class="socialmedia__twitter">
-        <use xlink:href="./demo/icons/sprite.svg#icon-twitter"></use>
-      </svg>
-      <svg class="socialmedia__vimeo">
-        <use xlink:href="./demo/icons/sprite.svg#icon-vimeo"></use>
-      </svg>
-      <svg class="socialmedia__youtube">
-        <use xlink:href="./demo/icons/sprite.svg#icon-youtube"></use>
-      </svg>
-    </div>
-  </section>
-
-  <section>
-    <div class="user">
-      <svg class="user__image">
-        <use xlink:href="./demo/icons/sprite.svg#icon-user"></use>
-      </svg>
-      <svg class="user__logout">
-        <use xlink:href="./demo/icons/sprite.svg#icon-lock"></use>
-      </svg>
-      <span class="user__logout--register">Register</span>
-    </div>
-  </section>
-  <section>
-    <div class="user">
-      <img
-        src="./demo/img/realtor-3.jpeg"
-        alt="Avatar 3"
-        class="user__image user__image--bordered"
-      />
-      <svg class="user__login">
-        <use xlink:href="./demo/icons/sprite.svg#icon-lock-open"></use>
-      </svg>
-      <span class="user__login--name">John S.</span>
-    </div>
-  </section>
-
-  <footer>
-    <div class="footer__copyright">Copyright (c) 2021</div>
-  </footer>
   </body>
 </html>

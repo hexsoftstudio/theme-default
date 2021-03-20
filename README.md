@@ -80,7 +80,7 @@ examples:
     <div class="cart">
       <div class="cart__image">
         <svg class="cart__image--shopping-cart">
-          <use xlink:href="./demo/icons/sprite.svg#icon-shopping-cart"></use>
+          <use xlink:href="./icons/sprite.svg#icon-shopping-cart"></use>
         </svg>
       </div>
       <div class="cart__label">
