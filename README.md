@@ -100,6 +100,35 @@ examples:
 </footer>
 ```
 
+### Hero - video
+
+```html
+<section class="hero-container">
+  <video
+    class="hero__video"
+    poster="https://source.unsplash.com/weekly?water"
+    playsinline
+    autoplay
+    muted
+    loop
+  >
+    <source src="./video/170216A_142_WomanWatchingWaterfall2_1080p.webm" type="video/webm">
+    <source src="./video/170216A_142_WomanWatchingWaterfall2_1080p.mp4" type="video/mp4">
+  </video>
+</section>
+```
+
+### Hero - image
+
+```html
+<section class="hero-container">
+  <img
+    class="hero__image"
+    src="https://source.unsplash.com/weekly?water"
+  />
+</section>
+```
+
 ### Ratings
 
 ```html

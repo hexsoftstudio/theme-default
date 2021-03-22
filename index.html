@@ -10,19 +10,38 @@
   </head>
   <body class="home">
     <nav>
-      Menu
     </nav>
 
     <header>
-      Header
     </header>
     
-    <section class="hero">
-      Hero
+    <section class="hero-container">
+      <!--img
+        class="hero__image"
+        src="https://source.unsplash.com/weekly?water"
+      /-->
+      <video
+        class="hero__video"
+        poster="https://source.unsplash.com/weekly?water"
+        playsinline
+        autoplay
+        muted
+        loop
+      >
+        <source src="./demo/video/170216A_142_WomanWatchingWaterfall2_1080p.webm" type="video/webm">
+        <source src="./demo/video/170216A_142_WomanWatchingWaterfall2_1080p.mp4" type="video/mp4">
+      </video>
+      <div class="hero__detail hero__detail--left">
+        <h1>Waterfall</h1>
+        <div class="hero__detail--text">
+          <p><a href="https://www.videvo.net/video/panning-around-woman-watching-waterfall/5919/">Original video by kiril-videvo</a></p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sed a optio expedita vero labore?</p>
+          <button>Read More</button>
+        </div>
+      </div>
     </section>
   
     <main>
-      <h1>Latest News</h1>
       <section class="card-container">
         <div class="card-simple">
           <img class="card-simple__image" src="./demo/img/gal-1.jpeg" alt="image 1">
@@ -70,7 +89,7 @@
         </div>
       </section>
     </main>
-    
+
     <section class="sample">
       <div class="sample__socialmedia">
         <h1 class="socialmedia__title">Follow us on</h1>
@@ -102,7 +121,7 @@
         </div>
       </div>
       <div class="sample__cart">
-        <div class="cart">
+        <div class="cart cart--pulse">
           <div class="cart__image">
             <svg class="cart__image--shopping-cart">
               <use xlink:href="./demo/icons/sprite.svg#icon-shopping-cart"></use>
